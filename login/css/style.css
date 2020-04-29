@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #efefef;
+}
+
+.center{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(102,98,98,0.4);
+}
+
+.box-left{
+    width: 50%;
+    float: left;
+    min-height: 600px;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.box-right{
+    width: 50%;
+    float: left;
+    padding: 40px 50px;  
+    min-height: 600px;
+}
+
+h1{
+    margin: 0;
+    color: #519741;
+    text-align: center;
+}
+
+p{
+    font-size: 10pt;
+    color: #999;
+    text-align: center;
+}
+
+.fa{
+    font-size: 14pt;
+}
+.fb{
+    background-color: #1a478a;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.apple{
+    background-color: #111111;
+}
+button, input[type="text"], input[type="password"], input[type="email"], input[type="submit"]{
+    font-size: 12pt;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    height: 50px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.hoac{
+    position: relative;
+}
+
+.hoac::after{
+    content: " ";
+    position: absolute;
+    bottom: 4pt;
+    right: 0;
+    border-bottom: 1px solid #ccc;
+    width: 45%;
+}
+
+.hoac::before{
+    content: " ";
+    position: absolute;
+    bottom: 4pt;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    width: 45%;
+}
+
+a{
+    color: #666;
+}
+label{
+    color: #999;
+}
+
+table{
+    width: 100%;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="submit"]{
+    background-color: #efefef;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.button{
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    margin: 10px 10px 10px 0;
+}
+
+input[type="submit"]{
+    background-color: #519741;
+    font-size: 16pt;
+    margin-top: 10px;
+    color: #fff;
+}
+
+input[type="submit"]:hover{
+    background-color: #437e35;
+}
+
+.logo{
+    display: block;
+    margin: 60px auto;
+    height: 100px;
+}
+
+@media screen and (max-width: 960px){
+    .box-left{
+        display: none;
+    }
+
+    .box-right{
+        width: 100%;
+        padding: 0;
+    }
+
+    .center{
+        width: 70%;
+        box-shadow: none;
+    }
+
+    .fb{
+        margin-bottom: 10px;
+    }
+
+    body{
+        background-color: #fff;
+    }
+
+    .logo{
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .center{
+        width: 100%;
+    }   
+}

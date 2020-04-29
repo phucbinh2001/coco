@@ -1,0 +1,511 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menuicon{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 999;
+    font-size: 16pt;
+    display: none;
+}
+
+h2{
+    font-size: 25pt;
+    font-weight: 400;
+    margin: 40px 0;
+    text-align: center;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.row{
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.row1{
+    width: 100%;
+    float: left;
+}
+
+.center{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    height: 80px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 0 0 8px #9999;
+}
+    
+.header img{
+    height: 80px;
+    width: auto;
+}
+
+.menu {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.menu>li{
+    display: inline-block;
+    position: relative;
+}
+
+.menu>li a{
+    text-decoration: none;
+    color: #222;
+    padding: 10px;
+    font-weight: 600;
+    line-height: 80px;
+    transition: 0.3s;
+}
+
+.menu>li::after{
+    content: " ";
+    border-bottom: #519643 solid 2px;
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.menu a:hover{
+    color: #519643;
+}
+
+.menu>li:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+
+.menu li ul{
+    display: block;
+    position: absolute;
+    left: -20px;
+    border: 2px solid #519643;
+    background-color: #fff;
+    list-style: none;
+    width: 104px;
+    display: none;
+    z-index: 99;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 80px;
+}
+.ap{
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+
+h1{
+    font-size: 35pt;
+    font-weight: 500;
+    margin: 40px 0;
+}
+
+.banner a{
+    background-color: #519643;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 16pt;
+}
+
+.banner a:hover{
+    background-color: #65af56;
+}
+
+.card{
+    position: relative;
+    box-shadow: 0 2px 8px #ccc;
+    border-radius: 5px;
+    width: 49%;
+    height: 300px;
+    float: left;
+    position: relative;
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 2px 8px #999;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+
+.card .boximg{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.mr{
+    margin-right: 2%;
+}
+
+.info{
+    padding: 15% 10%;
+}  
+
+.card1{
+    background-image: url(../images/card_1.jpg);
+}
+
+.card2{
+    background-image: url(../images/card_2.jpg);
+}
+
+.card p{
+    font-size: 30pt;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card a{
+    text-decoration: none;
+    border-bottom: 3px solid #519643;
+    font-weight: 600;
+    color: #000;
+    transition: 0.2s;
+    font-size: 14pt;
+}
+
+.card a:hover{
+    color: #519643;
+}
+
+.products{
+
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 23.5%;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+.item .boxleft{
+    width: 80%;
+    float: left;
+}
+
+.item .boxright{
+    float: right;
+}
+
+.item i{
+    color: #fff;
+    background-color: #519643;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.item i:hover{
+    background-color: #65af56;
+}
+
+.item .info{
+   padding: 15px;
+}
+
+.gia{
+    color: #519643;
+    font-weight: bold;
+}
+
+.gia span{
+    font-size: 10pt;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.item:hover{
+    box-shadow: 0 2px 8px #ccc;
+} 
+
+.item:hover{
+    transform: translateY(-20px);
+}
+
+.bonus{
+    background-image: url(../images/bonus.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 130px;
+}
+
+.bonus p{
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+
+.bonus h2{
+    margin: 0;
+}
+
+.bonus input[type="email"]{
+    height: 50px;
+    max-width: 600px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 14pt;
+    border: 1px solid #519643;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    height: 50px;
+    background-color: #519643;
+    border: 0;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+input[type="submit"]:hover{
+    background-color: #65af56;
+}
+
+h2>span{
+    color: #519643;
+    font-weight: 500;
+}
+
+footer{
+    padding: 20px 0;
+}
+footer img{
+    width: 70%;
+}
+
+.fas{
+    width: 20px;
+}
+
+footer p{
+    margin: 10px 0;
+}
+footer ul{
+    padding-left: 20px;
+}
+
+footer a{
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+footer h3{
+    font-size: 18pt;
+    margin: 20px 0;
+}
+
+.coppyr img{
+    float: right;
+    width: 30%;
+}
+
+.coppyr{
+    float: left;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.col{
+    width: 32%;
+    float: left;
+}
+
+@media screen and (max-width: 960px){
+    .row{
+        margin-bottom: 20px;
+    }
+
+    .menuicon{
+        display: block;
+        line-height: 80px;
+    }
+
+    .menu{
+        display: none;
+    }
+    .banner {
+        height: 400px;
+    }
+    .ap {
+        top: 10px;
+    }
+
+    .card, .card .boximg{
+        height: 200px;
+    }
+
+    .center{
+        width: 96%;
+    }
+    .card .boximg{
+        background-size: cover;
+    }
+
+    .info{
+        padding: 5%;
+    }
+
+    .info p{
+        font-size: 22pt;
+    }
+
+    .info a{
+        font-size: 12pt;
+    }
+
+    .item{
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    .item:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header, .header img{
+        height: 60px;
+    }
+
+    .row{
+        margin-bottom: 20px;
+    }
+
+    .banner{
+        height: 300px;
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .ap{
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 30%;
+    }
+
+    .ap a{
+        font-size: 12pt;
+        padding: 5px 10px;
+    }
+
+    .banner h1{
+        font-size: 22pt;
+        margin: 20px 0;
+        color: #fff;
+        text-shadow: 0px 1px 8px #000;
+    }
+    .banner::before{
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top,  rgba(0,0,0,0.7), rgba(0,0,0,0));
+        position: absolute;
+        bottom: 0;
+    }
+
+    .info{
+        padding: 10%;
+    }
+
+    .card p{
+        font-weight: normal;
+    }
+
+    .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .item p{
+        font-size: 14pt;
+    }
+
+    .products h2{
+        font-size: 20pt;
+        margin: 10px;
+    }
+
+    .bonus{
+        padding: 60px;
+    }
+
+    .col, .coppyr{
+        width: 100%;
+        text-align: center;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .menuicon{
+        line-height: 60px;
+    }
+
+    .coppyr img{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
